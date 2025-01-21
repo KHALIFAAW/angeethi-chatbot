@@ -10,7 +10,7 @@ genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
 model = genai.GenerativeModel('gemini-pro')
 
-@app.route('/api/chat', methods='POST'])
+@app.route('/api/chat', methods='POST')
 def chat():
     data = request.get_json()
     user_message = data.get('message')
