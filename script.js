@@ -15,7 +15,7 @@ function sendMessage() {
 
     addMessageToChat('user', userMessage);
 
-    fetch('/api/chat', { // Updated endpoint
+    fetch('https://intense-woodland-59387-2a13a2b3e16f.herokuapp.com//api/chat', { // Updated endpoint
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
